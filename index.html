@@ -2,24 +2,43 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <!-- <link rel="stylesheet" href="./styles.css"> -->
+    <link rel="stylesheet" href="./styles.css">
     <script src="./script.js" defer></script>
+
     
     <title>Rock Paper Scissors</title>
      
 </head>
 <body>
-    <div class="heading">
-        <h1 class="title">Let's Play Rock Paper Scissors</h1>
-        <h2 class="sub_title">First to 5 wins!!</h2>
+   
+    <div class="container">
+        <div class="heading">
+                <h1 class="title">Let's Play Rock  Paper  Scissors</h1>
+                <h2 class="subtitle">First to 5 wins!!</h2>
+        </div>
+        
+        <div class="buttons">
+            <div class="new-game"><button id="new-game" onClick="refreshPage()">Play Again??</button></div>
+            <hr>
+            <button id="rock" data-type="Rock"><img src="./images_rps/rock-sign.png" alt="Rock" class="icons"></button>
+            <button id="paper" data-type="Paper"><img src="./images_rps/paper-sign.png" alt="Paper" class="icons"></button>
+            <button id="scissors" data-type="Scissors"><img src="./images_rps/scissors-sign.png" alt="Scissors" class="icons"></button>
+            <hr>
+        </div>        
+        <div class="message_container">
+            </div>
+            
+            
     </div>
-   <div class="buttons">
-       <button id="rock" data-type="Rock">Rock</button>
-       <button id="paper" data-type="Paper">Paper</button>
-       <button id="scissors" data-type="Scissors">Scissors</button>
-   </div>
-   <div class="message_container"></div>
+    <footer class="footer">
+            Built by  
+            <a class="footer-link" href="https://github.com/curveservices" 
+            target="_blank">Rozla-Dev</a>
+             | 
+            <a class="footer-link" href="https://github.com/curveservices/rock_paper_scissors"
+            target="_blank" >Source</a>
+    </footer>
 </body>
 </html>
