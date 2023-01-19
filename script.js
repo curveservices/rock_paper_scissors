@@ -22,7 +22,7 @@ scoreCard2.textContent = '0'
 
 const messageDiv = document.createElement('div');
 messageDiv.setAttribute('id', 'message');
-messageDiv.textContent = 'Don\'t lose to the computer!!'
+messageDiv.textContent = 'Don\'t lose to a computer!!'
 
 
 message_container.append(scores, messageDiv);
@@ -36,8 +36,13 @@ buttons.forEach((button) => {
     button.addEventListener('click', () =>{
         playerSelection = button.dataset.type;
         playRound(playerSelection, getComputerChoice())
+        console.log(playerSelection)
     })
-});
+})
+
+function refreshPage(){
+    window.location.reload();
+} 
 
 //Get message and score card elements
 const message = document.querySelector('#message');
@@ -62,22 +67,25 @@ let computerScore = 0;
 function playRound(playerSelection, computerSelection) {
     //process each selection//
             if(playerScore < 5 && computerScore < 5){
-            if (playerSelection == computerSelection){
-                message.textContent =  "It\'s a Tie";
+            if (
+            (playerSelection == "Rock" && computerSelection == "Rock") 
+            || (playerSelection == "Paper" && computerSelection == "Paper") 
+            || (playerSelection == "Scissors" && computerSelection == "Scissors")){
+                message.textContent =  `It\'s a Tie! Both Selected ${playerSelection}` ;
             } else if (
                 (playerSelection == "Rock" && computerSelection == "Scissors") 
                 || (playerSelection == "Paper" && computerSelection == "Rock") 
                 || (playerSelection == "Scissors" && computerSelection == "Paper")) {
     
-                message.textContent = `You win! ${playerSelection} beats ${computerSelection}`;
+                message.textContent = `Winner ! ${playerSelection} beats ${computerSelection}`;
                 playerScore++
             } else {
-                message.textContent = `You Loser! ${computerSelection} beats ${playerSelection}`;
+                message.textContent = `Loser ! ${computerSelection} beats ${playerSelection}`;
                 computerScore++
             };
             playerCard.textContent = playerScore;
             computerCard.textContent = computerScore;
-            
+      
               //Display final results
     finalResults(playerScore, computerScore);
             
@@ -86,13 +94,12 @@ function playRound(playerSelection, computerSelection) {
     function finalResults(player, computer){
         if(player == 5 || computer == 5){
             if(player > computer) {
-            message.textContent = "GAME OVER YOU WIN! YOU SMASHED THE COMPUTER";
+            message.textContent = "Game Over! You Win!";
             }else {
-            message.textContent = "GAME OVER YOU LOST TO A COMPUTER LOL!";
+            message.innerHTML = "Game Over! Computer Wins!";
             }
         }
     };
-
 //Code removed to enable buttons 
 
 //function checkWinner(playerSelection, computerSelection) {
