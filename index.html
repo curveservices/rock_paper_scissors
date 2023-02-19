@@ -11,22 +11,24 @@
     <title>Rock Paper Scissors</title>
      
 </head>
-<body>
+<body background="./images_rps/wall.jpeg">
    
     <div class="container">
         <div class="heading">
-                <h1 class="title">Let's Play Rock  Paper  Scissors</h1>
+                <h1 class="title">Play Rock  Paper  Scissors?</h1>
                 <h2 class="subtitle">First to 5 wins!!</h2>
         </div>
+       
+        <div class="new-game"><button id="new-game" onClick="refreshPage()">Play Again??</button></div>
         
         <div class="buttons">
-            <div class="new-game"><button id="new-game" onClick="refreshPage()">Play Again??</button></div>
             <hr>
             <button id="rock" data-type="Rock"><img src="./images_rps/rock-sign.png" alt="Rock" class="icons"></button>
             <button id="paper" data-type="Paper"><img src="./images_rps/paper-sign.png" alt="Paper" class="icons"></button>
             <button id="scissors" data-type="Scissors"><img src="./images_rps/scissors-sign.png" alt="Scissors" class="icons"></button>
             <hr>
-        </div>        
+        </div>  
+              
         <div class="message_container">
             </div>
             
@@ -38,7 +40,7 @@
             target="_blank">Rozla-Dev</a>
              | 
             <a class="footer-link" href="https://github.com/curveservices/rock_paper_scissors"
-            target="_blank" >Source</a>
+            target="_blank" >Source</a><img class="footerImg" src="images_rps/github-mark.png">
     </footer>
 </body>
 </html>

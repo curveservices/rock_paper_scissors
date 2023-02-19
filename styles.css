@@ -1,84 +1,104 @@
-/*  COLOR PALETTE
-    
-    BODY            #717171
-    CONTAINER       #3C3C3C
-    CRIMSON         #D7133A
-    BUTTON BORDER   #144552
-    GREEN           #28EEC5 */
 
 @import url('https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap');
 
+:root {
+    --default-background-color: #717171;
+    --container-color: #dcdcdc;
+    --red-color: #af0023;
+    --button-border: #144552;
+    --green-color: #22b195;
+}
+
 body {
+    background: url(./images_rps/wall.jpeg) center/120% var(--default-background-color);
     width: 100vw;
     height: 100vh;
-    background-color: #717171;
+    margin: auto;
     font-family: 'Rock Salt', Arial, Helvetica, sans-serif;
 }
 
 .container {
-    background-color: #c3c3c3;
-    margin: 25px 75px;
+    overflow: hidden;
+    background-color: var(--container-color);
+    margin: 20px 150px;
     padding: 0px 5px;
-    border-radius: 1%;
-    box-shadow: 12px 0px 20px 15px #2a2a2a;
+    border-radius: 8px;
+    box-shadow: 15px 0px 20px 15px #2a2a2a;
     color: #3c3c3c;
 }
 
 .title {
-    color:#d7133a;
-    margin: auto;
+    color: var(--red-color);
+    text-shadow: 2px 2px 2px #6f0c20;
+}
+
+.subtitle {
+    margin-top: -30px;
 }
 
 
 .heading {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    /* flex-wrap: wrap; */
 }
 
 .buttons {
-    display: flex;
-    justify-content: space-around;
+    display: flex ;
+    justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    margin: 0px 20px;
+    gap: 8px;
+    /* margin: 10px 0px */
 }
 
+
+
 button {
-    border: 4px solid #144552;
-    border-radius: 5%;
+    border: 2px solid var(--button-border);
+    border-radius: 50px;
     
 }
 
 button:hover {
-    background-color: #28eec5;
+    /* background-color: #d7133a; */
     cursor: pointer;
 }
 
 button:focus {
-    background-color:#d7133a;
+    background-color: var(--red-color);
     transition-duration: 0.75s;
 }
 .icons {
     width: 100px;
     height: 100px;
-    margin: 10px;
+    margin: 8px;
     padding: 20px;
-    background-color: #28eec5;
-    border: 2px solid #144552;
+    background-color: #ffffff;
+    border: 1px solid var(--button-border);
     box-shadow: inset 6px 8px 8px 6px #8e8e8e;
+    border-radius: 40px;
 }
 
 .new-game {
     display: flex;
     justify-content: center;
-    align-items: center;  
+    align-items: center; 
 }
 
 #new-game {
     font-family: 'Rock Salt', Arial, Helvetica, sans-serif;
-    background-color: #28eec5;
+    background-color: var(--green-color);
+    box-shadow: 8px 8px 10px 1px #236558;
+    border-radius: 20px;
+    margin-top: -20px;
+    /* margin-bottom: 10px; */
+}
+
+#new-game:active {
+    box-shadow: inset 2px 2px 6px #236558;
 }
 
 .scores{
@@ -92,18 +112,22 @@ button:focus {
 .scorecard {
     text-align: center;
     width: 20px;
-    background-color: #d7133a;
-    color: #28eec5;
+    background-color: var(--red-color);
+    box-shadow: 6px 1px 12px 1px #6f0c20;
+    color: black;
     padding: 0px 20px;
     font-size: x-large;
+    border-radius: 10px;
 }
 
 #message {
+    
     text-align: center;
     font-size: xx-large;
     margin: 10px 0;
     text-transform:capitalize;
-    color: #d7133a;
+    color: var(--red-color);
+    text-shadow: 2px 2px 3px #6f0c20;
 }
  
 hr {
@@ -112,14 +136,26 @@ hr {
     height: 2px;
     margin: 20px 0px;
 }
+
 .footer {
-    text-align: center;
-    margin-top: 20px;
-    color: #c3c3c3;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    font-family: 'Rock Salt', sans-serif;
+    font-size: 20px;
+    color: black;
     font-weight: 900;
+    background-color: #ffffff64;
 }
 a {
     text-decoration: none;
-    color:#28eec5;
-    
+    color: #af0023;
+}
+
+.footerImg{
+    height: 28px;
+    padding: 10px 0px;
+    margin-bottom: -5px;
+    align-items: center;
 }

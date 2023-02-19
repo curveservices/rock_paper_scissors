@@ -31,6 +31,7 @@ scores.append(playerDiv, scoreCard, compDiv, scoreCard2);
 //Create three buttons, one for each selection & Add event listener 
 //Call playRound function with the correct playerSelection 
 const buttons = document.querySelectorAll('button');
+const refresh = document.getElementById('new-game');
 
 buttons.forEach((button) => {
     button.addEventListener('click', () =>{
