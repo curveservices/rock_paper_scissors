@@ -67,10 +67,12 @@ button:hover {
     cursor: pointer;
 }
 
-button:focus {
+button:active {
     background-color: var(--red-color);
-    transition-duration: 0.75s;
+    /* transition-duration: 0.1s; */
 }
+
+
 .icons {
     width: 100px;
     height: 100px;
@@ -114,7 +116,7 @@ button:focus {
     width: 20px;
     background-color: var(--red-color);
     box-shadow: 6px 1px 12px 1px #6f0c20;
-    color: black;
+    color: var(--green-color);
     padding: 0px 20px;
     font-size: x-large;
     border-radius: 10px;
