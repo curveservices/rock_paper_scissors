@@ -13,14 +13,15 @@ body {
     background: url(./images_rps/wall.jpeg) center/120% var(--default-background-color);
     width: 100vw;
     height: 100vh;
-    margin: auto;
+    margin: 0;
+    padding: 0;
     font-family: 'Rock Salt', Arial, Helvetica, sans-serif;
 }
 
 .container {
     overflow: hidden;
     background-color: var(--container-color);
-    margin: 20px 150px;
+    margin: 20px 175px;
     padding: 0px 5px;
     border-radius: 8px;
     box-shadow: 15px 0px 20px 15px #2a2a2a;
