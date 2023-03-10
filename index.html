@@ -1,46 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="shortcut icon" href="images_rps/favicon_io/favicon-16x16.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="shortcut icon"
+      href="images_rps/favicon_io/favicon-16x16.png"
+      type="image/x-icon"
+    />
     <script src="./script.js" defer></script>
 
-    
     <title>Rock Paper Scissors</title>
-     
-</head>
-<body background="./images_rps/wall.jpeg">
-   
+  </head>
+  <body background="./images_rps/wall.jpeg">
     <div class="container">
-        <div class="heading">
-                <h1 class="title">Play Rock  Paper  Scissors?</h1>
-                <h2 class="subtitle">First to 5 wins!!</h2>
-        </div>
-       
-        <div class="new-game"><button id="new-game" onClick="refreshPage()">Play Again??</button></div>
-        
-        <div class="buttons">
-            <hr>
-            <button id="rock" data-type="Rock"><img src="./images_rps/rock-sign.png" alt="Rock" class="icons"></button>
-            <button id="paper" data-type="Paper"><img src="./images_rps/paper-sign.png" alt="Paper" class="icons"></button>
-            <button id="scissors" data-type="Scissors"><img src="./images_rps/scissors-sign.png" alt="Scissors" class="icons"></button>
-            <hr>
-        </div>  
-              
-        <div class="message_container">
-            </div>
+      <div class="heading">
+        <h1 class="title">Play Rock Paper Scissors?</h1>
+        <h2 class="subtitle">First to 5 wins!!</h2>
+      </div>
+
+      <div class="new-game">
+        <button id="new-game" onClick="refreshPage()">Play Again??</button>
+      </div>
+
+      <div class="buttons">
+        <hr />
+        <button id="rock" data-type="Rock">
+          <img src="./images_rps/rock-sign.png" alt="Rock" class="icons" />
+        </button>
+        <button id="paper" data-type="Paper">
+          <img src="./images_rps/paper-sign.png" alt="Paper" class="icons" />
+        </button>
+        <button id="scissors" data-type="Scissors">
+          <img
+            src="./images_rps/scissors-sign.png"
+            alt="Scissors"
+            class="icons"
+          />
+        </button>
+        <hr />
+      </div>
+
+      <div class="message_container"></div>
     </div>
-    
+
     <footer class="footer">
-            Built by  
-            <a class="footer-link" href="https://github.com/curveservices" 
-            target="_blank">Rozla-Dev</a>
-             | 
-            <a class="footer-link" href="https://github.com/curveservices/rock_paper_scissors"
-            target="_blank" >Source</a><img class="footerImg" src="images_rps/github-mark.png">
+      Built by
+      <a
+        class="footer-link"
+        href="https://github.com/curveservices"
+        target="_blank"
+        >Rozla-Dev</a
+      >
+      |
+      <a
+        class="footer-link"
+        href="https://github.com/curveservices/rock_paper_scissors"
+        target="_blank"
+        >Source</a
+      ><img class="footerImg" src="images_rps/github-mark.png" />
     </footer>
-</body>
+  </body>
 </html>
