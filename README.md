@@ -24,4 +24,13 @@ This project was created for the <a href="https://www.theodinproject.com/lessons
 4. Add a div for displaying results and change all of your console.logs into DOM methods
 5. Display the running score, and announce a winner of the game once one player reaches 5 points.
 
-***Rozla-Dev 11/2022***
+
+## Languages & Tools
+
+<img width="100" alt="javascript" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" /> <img width="100" alt="HTML5" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" /> <img width="100" alt="CSS3" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
+          
+
+
+***<a href="https://twitter.com/Crypto_Rozla"> Rozla-Dev </a> 11-2022***
+
+[Back to top 👆](#project-tic-tac-toe)
