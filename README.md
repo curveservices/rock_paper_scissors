@@ -33,4 +33,4 @@ This project was created for the <a href="https://www.theodinproject.com/lessons
 
 ***<a href="https://twitter.com/Crypto_Rozla"> Rozla-Dev </a> 11-2022***
 
-[Back to top 👆](#project-tic-tac-toe)
+[Back to top 👆](#rock-paper-scissors)
